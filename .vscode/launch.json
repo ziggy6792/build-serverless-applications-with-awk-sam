@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "aws-sam",
+      "request": "direct-invoke",
+      "name": "sam-app-example:app.lambdaHandler (nodejs12.x)",
+      "invokeTarget": {
+        "target": "code",
+        "projectRoot": "sam-app-example/hello-world",
+        "lambdaHandler": "app.lambdaHandler"
+      },
+      "lambda": {
+        "runtime": "nodejs12.x",
+        "payload": {},
+        "environmentVariables": {}
+      }
+    }
+  ]
+}
